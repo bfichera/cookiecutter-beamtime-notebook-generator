@@ -1,0 +1,7 @@
+{
+  "project_name": "beamtime-analysis",
+  "local_cores": 4,
+  "_copy_without_render": [
+    "*.py.j2"
+  ]
+}
