@@ -3,6 +3,6 @@
   "proposal_number": 12345,
   "local_cores": 4,
   "_copy_without_render": [
-    "*.py.j2"
+    "*.py"
   ]
 }

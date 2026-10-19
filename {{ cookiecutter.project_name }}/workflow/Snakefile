@@ -52,7 +52,7 @@ rule all:
 rule render_source:
     input:
         template=lambda wildcards: (
-            f"workflow/notebooks/{RUN_TO_ANALYSIS[int(wildcards.run)]}.py.j2"
+            f"workflow/notebooks/{RUN_TO_ANALYSIS[int(wildcards.run)]}.py"
         )
     output:
         temp("build/notebooks/run_{run}.py")
