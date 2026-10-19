@@ -10,6 +10,7 @@ to execute.
 ## Usage
 
 1. `cookiecutter gh:bfichera/cookiecutter-beamtime-notebook-generator.git`
-2. Configure run numbers in `config/analyses.yaml`
-3. Write `.py.j2` files in `workflow/notebooks`
-4. run `make` and be merry
+2. Enter the proposal number when prompted
+3. Configure run numbers in `config/analyses.yaml`
+4. Write `.py.j2` files in `workflow/notebooks`; `{{ proposal_number }}` and `{{ run }}` are available as template variables
+5. Run `make` and be merry

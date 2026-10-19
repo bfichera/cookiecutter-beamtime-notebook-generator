@@ -60,7 +60,8 @@ rule render_source:
         """
         mkdir -p build/notebooks
         {PYTHON} workflow/scripts/render.py \
-            {input.template:q} {output:q} {wildcards.run:q}
+            {input.template:q} {output:q} {wildcards.run:q} \
+            {config[proposal_number]:q}
         """
 
 
